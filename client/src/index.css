@@ -1,0 +1,222 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Church Color Palette */
+:root {
+  /* Primary Colors */
+  --color-purple: #6A0DAD;
+  --color-pink: #E91E8C;
+  --color-bright-pink: #FF69B4;
+  --color-light-pink: #FFB6D9;
+  
+  /* Text Colors */
+  --color-dark-blue: #1E3A5F;
+  --color-dark-text: #1A1A1A;
+  --color-light-blue: #EFF6FF;
+  --color-white: #FFFFFF;
+  
+  /* Accent Colors */
+  --color-green-whatsapp: #25D366;
+  --color-gold: #D4AF37;
+  
+  /* Semantic */
+  --primary: #6A0DAD;
+  --primary-foreground: #FFFFFF;
+  --accent: #E91E8C;
+  --accent-foreground: #FFFFFF;
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
+  --muted: #F0F0F0;
+  --muted-foreground: #666666;
+  --border: #E5E5E5;
+  --radius: 0.65rem;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: #FFFFFF;
+  --color-card-foreground: #1A1A1A;
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #1A1A1A;
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: #F0F0F0;
+  --color-secondary-foreground: #1A1A1A;
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFFFFF;
+  --color-border: var(--border);
+  --color-input: #F5F5F5;
+  --color-ring: #6A0DAD;
+  --color-chart-1: #6A0DAD;
+  --color-chart-2: #E91E8C;
+  --color-chart-3: #FF69B4;
+  --color-chart-4: #FFB6D9;
+  --color-chart-5: #EFF6FF;
+  --color-sidebar: #FFFFFF;
+  --color-sidebar-foreground: #1A1A1A;
+  --color-sidebar-primary: #6A0DAD;
+  --color-sidebar-primary-foreground: #FFFFFF;
+  --color-sidebar-accent: #E91E8C;
+  --color-sidebar-accent-foreground: #FFFFFF;
+  --color-sidebar-border: #E5E5E5;
+  --color-sidebar-ring: #6A0DAD;
+}
+
+/* Typography System */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    @apply font-bold;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+    color: var(--color-dark-blue);
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+    color: var(--color-dark-blue);
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl font-bold;
+    color: var(--color-dark-blue);
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl font-bold;
+    color: var(--color-dark-blue);
+  }
+  
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /* Custom container utility */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+  
+  /* Church-specific utilities */
+  .gradient-purple-pink {
+    background: linear-gradient(135deg, #6A0DAD 0%, #E91E8C 100%);
+  }
+  
+  .gradient-light-blue {
+    background-color: #EFF6FF;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:from-purple-700 hover:to-pink-700;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-purple-600 border-2 border-purple-600 font-semibold rounded-lg transition-all duration-300 hover:bg-purple-50;
+  }
+  
+  .btn-whatsapp {
+    @apply px-4 py-2 bg-green-500 text-white font-semibold rounded-lg transition-all duration-300 hover:bg-green-600 inline-flex items-center gap-2;
+  }
+  
+  .section-divider {
+    height: 2px;
+    background: linear-gradient(90deg, #6A0DAD 0%, #E91E8C 50%, #6A0DAD 100%);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:scale-105;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6A0DAD;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E91E8C;
+}
