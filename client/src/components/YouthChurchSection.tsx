@@ -3,31 +3,31 @@ export default function YouthChurchSection() {
     {
       icon: 'fa-music',
       name: 'Worship & Arts',
-      leader: 'Bro. Joshua Adu',
+      leader: 'Joshua',
       description: 'Leading worship through music, dance, and creative expressions.',
     },
     {
       icon: 'fa-bullhorn',
       name: 'Evangelism',
-      leader: 'Sis. Ruth Asare',
+      leader: ' Ruth ',
       description: 'Reaching out and sharing the Gospel with passion and purpose.',
     },
     {
       icon: 'fa-laptop',
       name: 'Media & Tech',
-      leader: 'Bro. Kofi Mensah',
+      leader: 'Mensah',
       description: 'Managing digital platforms and technical production excellence.',
     },
     {
       icon: 'fa-theater-masks',
       name: 'Drama & Dance',
-      leader: 'Sis. Lydia Owusu',
+      leader: 'Lydia ',
       description: 'Expressing faith through dramatic performances and dance ministry.',
     },
     {
       icon: 'fa-handshake',
       name: 'Ushering',
-      leader: 'Bro. Samuel Tetteh',
+      leader: 'Samuel',
       description: 'Welcoming and serving with excellence and warm hospitality.',
     },
   ];
@@ -51,7 +51,7 @@ export default function YouthChurchSection() {
               <i className="fas fa-person text-purple-600 text-4xl"></i>
             </div>
             <h3 className="text-3xl font-bold font-montserrat mb-2">Youth Leader</h3>
-            <p className="text-pink-100 text-lg mb-4">Ptr. David Mensah</p>
+            <p className="text-pink-100 text-lg mb-4">Ptr. Ken</p>
             <p className="text-pink-100 max-w-2xl mx-auto">
               Leading our youth with vision, passion, and unwavering faith in God's purpose for their lives.
             </p>

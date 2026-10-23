@@ -2,27 +2,33 @@ export default function ServiceTimesSection() {
   const services = [
     {
       icon: 'fa-sun',
-      name: 'Sunday Service',
+      name: 'first Service',
       time: '8:00 AM & 10:30 AM',
-      location: 'Main Auditorium',
+      location: 'Main Church',
+    },
+      {
+      icon: 'fa-sun',
+      name: 'Second Service',
+      time: '11:00 AM & 1:00 PM',
+      location: 'Main Church',
     },
     {
       icon: 'fa-book',
       name: 'Midweek Service',
       time: 'Wednesday 6:30 PM',
-      location: 'Chapel Hall',
+      location: 'Main church',
     },
     {
       icon: 'fa-hands-praying',
       name: 'Prayer Night',
       time: 'Friday 7:00 PM',
-      location: 'Prayer Room',
+      location: 'Main church',
     },
     {
       icon: 'fa-users',
       name: 'Youth Service',
-      time: 'Saturday 5:00 PM',
-      location: 'Youth Center',
+      time: 'Sunday 7:00 AM to 10:00 AM',
+      location: 'Main churchr',
     },
   ];
 

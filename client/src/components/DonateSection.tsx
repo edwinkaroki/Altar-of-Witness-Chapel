@@ -75,10 +75,10 @@ export default function DonateSection() {
                 Mobile Money
               </h4>
               <p className="text-gray-700 mb-4">
-                <span className="font-semibold">MTN:</span> 024-123-4567
+                <span className="font-semibold">Mpesa:</span> 123
               </p>
               <p className="text-gray-700">
-                <span className="font-semibold">Vodafone:</span> 054-123-4567
+                <span className="font-semibold">pay:</span> 123
               </p>
             </div>
 

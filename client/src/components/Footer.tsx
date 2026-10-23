@@ -27,7 +27,7 @@ export default function Footer({ showBackToTop, onBackToTop }: FooterProps) {
                 <i className="fas fa-cross text-purple-600 text-lg"></i>
               </div>
               <div>
-                <h3 className="text-lg font-bold font-montserrat">AOW Chapel</h3>
+                <h3 className="text-lg font-bold font-montserrat">AWC</h3>
                 <p className="text-xs text-pink-200">Altar Of Witness</p>
               </div>
             </div>
@@ -59,18 +59,18 @@ export default function Footer({ showBackToTop, onBackToTop }: FooterProps) {
             <div className="space-y-3 text-sm text-pink-100">
               <p>
                 <i className="fas fa-map-marker-alt text-pink-300 mr-2"></i>
-                123 Faith Avenue, Accra, Ghana
+                Muthaiga Estate (above Nyeri Town View Academy), Nyeri, Kenya
               </p>
               <p>
                 <i className="fas fa-phone text-pink-300 mr-2"></i>
                 <a href="tel:+233501234567" className="hover:text-white transition-colors">
-                  +233 50 123 4567
+                  +254 50 123 4567
                 </a>
               </p>
               <p>
                 <i className="fas fa-envelope text-pink-300 mr-2"></i>
                 <a href="mailto:info@aowchapel.com" className="hover:text-white transition-colors">
-                  info@aowchapel.com
+                  info@AWC.com
                 </a>
               </p>
             </div>

@@ -8,7 +8,7 @@ export default function SermonsSection() {
     {
       id: 1,
       title: 'The Power of Faith',
-      preacher: 'Ptr. David Mensah',
+      preacher: 'Ptr. David ',
       date: '2026-04-19',
       scripture: 'Hebrews 11:1',
       topic: 'Faith',
@@ -17,7 +17,7 @@ export default function SermonsSection() {
     {
       id: 2,
       title: 'Living in Victory',
-      preacher: 'Ptr. Grace Osei',
+      preacher: 'Ptr. Grace ',
       date: '2026-04-12',
       scripture: '1 John 5:4',
       topic: 'Victory',
@@ -26,7 +26,7 @@ export default function SermonsSection() {
     {
       id: 3,
       title: 'The Love of Christ',
-      preacher: 'Ptr. David Mensah',
+      preacher: 'Ptr. David ',
       date: '2026-04-05',
       scripture: 'John 3:16',
       topic: 'Love',
@@ -35,7 +35,7 @@ export default function SermonsSection() {
     {
       id: 4,
       title: 'Transformation Through Prayer',
-      preacher: 'Ptr. Grace Osei',
+      preacher: 'Ptr. Grace',
       date: '2026-03-29',
       scripture: 'Philippians 4:6',
       topic: 'Prayer',
@@ -44,7 +44,7 @@ export default function SermonsSection() {
     {
       id: 5,
       title: 'God\'s Faithfulness',
-      preacher: 'Ptr. David Mensah',
+      preacher: 'Ptr. David',
       date: '2026-03-22',
       scripture: 'Lamentations 3:22-23',
       topic: 'Faith',

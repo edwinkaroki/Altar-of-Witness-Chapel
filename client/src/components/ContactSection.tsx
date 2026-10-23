@@ -25,8 +25,8 @@ export default function ContactSection() {
                     Location
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    123 Faith Avenue<br />
-                    Accra, Ghana<br />
+                    Muthaiga Estate (above Nyeri Town View Academy)<br />
+                    <br />
                     P.O. Box 1234
                   </p>
                 </div>
@@ -43,12 +43,12 @@ export default function ContactSection() {
                   </h3>
                   <p className="text-gray-700">
                     <a href="tel:+233501234567" className="hover:text-pink-600 transition-colors">
-                      +233 50 123 4567
+                      +254 50 123 4567
                     </a>
                   </p>
                   <p className="text-gray-700">
                     <a href="tel:+233502234567" className="hover:text-pink-600 transition-colors">
-                      +233 50 223 4567
+                      +254 50 223 4567
                     </a>
                   </p>
                 </div>
@@ -65,12 +65,12 @@ export default function ContactSection() {
                   </h3>
                   <p className="text-gray-700">
                     <a href="mailto:info@aowchapel.com" className="hover:text-pink-600 transition-colors">
-                      info@aowchapel.com
+                      info@AWC.com
                     </a>
                   </p>
                   <p className="text-gray-700">
                     <a href="mailto:pastor@aowchapel.com" className="hover:text-pink-600 transition-colors">
-                      pastor@aowchapel.com
+                      pastor@awc.com
                     </a>
                   </p>
                 </div>
