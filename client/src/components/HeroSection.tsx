@@ -30,7 +30,7 @@ export default function HeroSection() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-pink-200">
             Welcome to
           </p>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-montserrat mb-4">
+          <h1 className="mb-4 font-montserrat text-5xl font-bold text-white md:text-6xl lg:text-7xl">
             Altar Of Witness Chapel
           </h1>
           <p className="mx-auto max-w-3xl text-xl text-white/85 md:text-2xl">
@@ -49,20 +49,22 @@ export default function HeroSection() {
           </button>
         </div>
 
-        <div data-aos="fade-up" data-aos-delay="400" className="mt-12 flex justify-center gap-8 text-center">
-          <div>
-            <p className="text-3xl font-bold">5000+</p>
-            <p className="text-white/80">Members</p>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          className="mt-12 grid grid-cols-3 divide-x divide-amber-200/60 text-center"
+        >
+          <div className="min-w-0 px-1 sm:px-3">
+            <p className="text-2xl font-bold sm:text-3xl">5000+</p>
+            <p className="text-xs text-white/80 sm:text-base">Members</p>
           </div>
-          <div className="border-l border-amber-200/60"></div>
-          <div>
-            <p className="text-3xl font-bold">50+</p>
-            <p className="text-white/80">Ministries</p>
+          <div className="min-w-0 px-1 sm:px-3">
+            <p className="text-2xl font-bold sm:text-3xl">50+</p>
+            <p className="text-xs text-white/80 sm:text-base">Ministries</p>
           </div>
-          <div className="border-l border-amber-200/60"></div>
-          <div>
-            <p className="text-3xl font-bold">24/7</p>
-            <p className="text-white/80">Prayer Coverage</p>
+          <div className="min-w-0 px-1 sm:px-3">
+            <p className="text-2xl font-bold sm:text-3xl">24/7</p>
+            <p className="text-xs text-white/80 sm:text-base">Prayer Coverage</p>
           </div>
         </div>
       </div>

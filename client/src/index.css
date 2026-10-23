@@ -201,22 +201,18 @@
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
-/* Custom scrollbar */
+body {
+  overflow-x: clip;
+}
+
+/* Keep scrolling available without displaying a scrollbar or reserving its gutter. */
+* {
+  scrollbar-width: none;
+}
+
 ::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #6A0DAD;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #E91E8C;
+  display: none;
 }

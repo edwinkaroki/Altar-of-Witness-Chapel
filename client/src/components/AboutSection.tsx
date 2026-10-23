@@ -49,7 +49,7 @@ export default function AboutSection() {
           </div>
 
           {/* Right: Image Placeholder */}
-          <div data-aos="fade-left" className="relative">
+          <div data-aos="fade-left" className="relative overflow-hidden rounded-2xl">
             <div className="w-full aspect-square bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl overflow-hidden shadow-2xl">
               <div className="w-full h-full flex items-center justify-center">
                 <div className="text-center">
